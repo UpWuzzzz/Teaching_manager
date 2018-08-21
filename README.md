@@ -14,3 +14,14 @@
 + 排名查询
 + 一键教评
 
+#### 流程
+```flow
+st=>start: 开始
+op=>operation: 输入用户名密码以及验证码
+cond=>condition: 是否登陆成功
+gd=>operation: 查询成绩
+e=>end
+st->op->cond
+cond(yes)->gd
+cond(no)->op
+&```
